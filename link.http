@@ -1,0 +1,30 @@
+@url = http://localhost:5000/api
+@json = Content-Type: application/json
+
+### 注册
+
+post {{url}}/register
+
+{{json}}
+
+{
+    "name": "ricardo",
+    "pwd": "123456"
+}
+
+### 登陆
+
+post {{url}}/login
+
+{{json}}
+
+{
+    "name": "ricardo",
+    "pwd": "123456"
+}
+
+### 获取用户信息
+
+get {{url}}/getUserInfo
+
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlMDQ4ODU4Zjc5YmEwNDIyYzRkNWM2ZiIsInVuVXNlIjoi6ZqP5L6_5Yqg55qE5a2X5q6177yM5LiN55So5Zyo5oSPIiwiaWF0IjoxNTc3MzU1NDIwfQ.xrqmNEAofia61gPbrcKv8dEdmhNcsxOLeAK_LPfIvWg
